@@ -1,0 +1,254 @@
+/* fonts */
+@font-face {
+    font-family: 'Futura PT Book';
+    src: local('Futura PT Book'), local('Futura-PT-Book'),
+        url('src/fonts/FuturaPT-Book/FuturaPT-Book.woff2') format('woff2'),
+        url('src/fonts/FuturaPT-Book/FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'Futura PT Medium';
+    src: local('Futura PT Medium'), local('Futura-PT-Medium'),
+        url('src/fonts/FuturaPT-Medium/FuturaPT-Medium.woff2') format('woff2'),
+        url('src/fonts/FuturaPT-Medium/FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: local('Futura PT Demi'), local('Futura-PT-Demi'),
+        url('src/fonts/FuturaPT-Demi/FuturaPT-Demi.woff2') format('woff2'),
+        url('src/fonts/FuturaPT-Demi/FuturaPT-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'Futura PT Heavy';
+    src: local('Futura PT Heavy'), local('Futura-PT-Heavy'),
+        url('src/fonts/FuturaPT-Heavy/FuturaPT-Heavy.woff2') format('woff2'),
+        url('src/fonts/FuturaPT-Heavy/FuturaPT-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+/* main styles */
+:root {
+    --main-color: #2D2D2D;
+    --past-price: #2D2D2D;
+    --current-price: #D01345;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--main-color);
+}
+
+
+.main-wrapper {
+    margin: 102px auto 137px;
+    max-width: 1328px;
+    width: 100%;
+}
+
+.main__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    max-width: 332px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card__first-block {
+    position: relative;
+    max-width: 332px;
+    width: 100%;
+    max-height: 444px;
+    height: 100%;
+}
+
+.card__first-block_img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__first-block_discount {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 8px;
+    width: 42px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Futura PT Demi';
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #D01345;
+    background-color: #ffffff;
+}
+
+.favorite-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 26px;
+    height: 21px;
+    background-image: url('src/img/sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: none; 
+    cursor: pointer; 
+    background-color: transparent; 
+}
+  
+.favorite-icon.active {
+    background-position: 0px -21px;
+}
+
+.card__second-block-wrapper {
+    position: relative;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card__second-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 332px;
+    width: 100%;
+    gap: 10px;
+}
+
+.card:hover .card__second-block {
+    position: absolute;
+    top: -14px;
+    left: -15px;
+    padding: 13px 15px 19px;
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100% + 30px);
+    width: calc(100% + 30px);
+    background-color: #ffffff;
+    z-index: 10; 
+    background-color: #ffffff; 
+}
+
+.card__second-block_h3 {
+    margin: 0;
+    height: 48px; 
+    font-family: 'Futura PT Book';
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card__second-block-price {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card__sizes-block_available {
+    font-family: 'Futura PT Book';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    color: var(--past-price);
+    opacity: 0.7;
+}
+
+.card__sizes-block_size {
+    margin-top: 8px;
+    font-family: 'Futura PT Medium';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    display: flex;
+    gap: 16px;
+}
+
+#buy-btn {
+    padding: 12px 24px;
+    font-family: 'Futura PT Demi', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    border: none;
+    background-color: var(--main-color);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#past-price {
+    font-family: 'Futura PT Medium', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--past-price);
+    opacity: 0.7;
+}
+
+#current-price {
+    font-family: 'Futura PT Heavy', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--current-price);
+}
+
+.card__second-block-hidden {
+    display: none;
+}
+
+.card:hover .card__second-block-hidden {
+    position: absolute;
+    top: 85px;
+    left: -15px;
+    padding: 13px 15px 19px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 30px);
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+/* media */
+
+@media (hover: none) {
+    *:hover {
+        all: unset !important
+    }
+}
+
+@media only screen and (max-width: 1328px) {
+    .main__cards {
+        padding: 0 20px;
+    }
+}

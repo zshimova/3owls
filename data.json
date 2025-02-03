@@ -1,0 +1,66 @@
+[
+    {
+         "name": "Вельветовый пуховик",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/1.webp",
+         "amount": "-25%"
+     },
+ 
+    {
+         "name": "Вельветовый пуховик",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/2.webp",
+         "amount": "-25%"
+     },
+ 
+    {
+         "name": "Вельветовый пуховик",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/3.webp",
+         "amount": "-25%"
+     },
+ 
+    {
+         "name": "Вельветовый пуховик в несколько слов для проверки количества",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/4.webp",
+         "amount": "-25%"
+     },
+ 
+    {
+         "name": "Вельветовый пуховик",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/5.webp",
+         "amount": "-25%"
+     },
+    
+     {
+         "name": "Вельветовый пуховик",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/6.webp",
+         "amount": "-25%"
+     },
+
+    {
+         "name": "Вельветовый пуховик",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/7.webp",
+         "amount": "-25%"
+     },
+
+     {
+         "name": "Вельветовый пуховик",
+         "past_price": "7 999руб.",
+         "discount": "1 339руб.",
+         "img": "src/img/2.webp",
+         "amount": "-25%"
+     }
+ 
+ ]
